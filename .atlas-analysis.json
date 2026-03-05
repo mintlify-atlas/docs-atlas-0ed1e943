@@ -1,0 +1,92 @@
+{
+  "projectType": "frontend",
+  "projectName": "La Velada V",
+  "projectDescription": "Official website for La Velada V boxing event featuring streamers and content creators.",
+  "theme": "almond",
+  "primaryColor": "#f4e4cc",
+  "lightColor": "#a8a39f",
+  "darkColor": "#5b483c",
+  "navigation": {
+    "groups": [
+      {
+        "group": "Overview",
+        "pages": [
+          "introduction",
+          "getting-started",
+          "project-structure"
+        ]
+      },
+      {
+        "group": "Components",
+        "pages": [
+          "components/overview",
+          "components/fighter-cards",
+          "components/combat-display",
+          "components/social-links",
+          "components/media-components"
+        ]
+      },
+      {
+        "group": "Features",
+        "pages": [
+          "features/authentication",
+          "features/predictions-system",
+          "features/countdown",
+          "features/live-stream"
+        ]
+      },
+      {
+        "group": "Data & Content",
+        "pages": [
+          "data/fighters",
+          "data/combats",
+          "data/artists-sponsors"
+        ]
+      },
+      {
+        "group": "Styling",
+        "pages": [
+          "styling/tailwind-setup",
+          "styling/animations",
+          "styling/design-system"
+        ]
+      },
+      {
+        "group": "Development",
+        "pages": [
+          "development/setup",
+          "development/scripts",
+          "development/database",
+          "development/deployment"
+        ]
+      },
+      {
+        "group": "Contributing",
+        "pages": [
+          "contributing/guidelines",
+          "contributing/code-style"
+        ]
+      }
+    ]
+  },
+  "keyFeatures": [
+    "Astro-based SSR website with Vercel deployment",
+    "Fighter profiles with detailed bios and social links",
+    "Combat prediction system with user voting",
+    "Twitch OAuth authentication",
+    "Real-time countdown to event",
+    "Responsive Tailwind CSS design",
+    "Video workout galleries and fight clips",
+    "Database-backed predictions using Turso/libSQL"
+  ],
+  "publicApiSurface": [
+    "GET /api/predictions - Retrieve combat predictions",
+    "POST /api/predictions - Submit user vote",
+    "BoxerCard component - Display fighter information",
+    "CombatVersus component - Show matchup details",
+    "FighterSelector component - Interactive fighter selection",
+    "Countdown component - Event countdown timer",
+    "FIGHTERS constant - Fighter data array",
+    "COMBATS constant - Combat data array"
+  ]
+}
